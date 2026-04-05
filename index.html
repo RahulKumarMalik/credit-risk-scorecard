@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Risk Scorecard Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="dashboard-container">
+        <header class="dashboard-header">
+            <h1>Credit Risk Scorecard & Borrower Default Analysis</h1>
+            <p>Loan Portfolio & Underwriting Performance Dashboard</p>
+        </header>
+
+        <section class="kpi-grid">
+            <div class="kpi-card">
+                <h3>Total Loan Portfolio</h3>
+                <h2>50,000</h2>
+                <p>Simulated Records</p>
+            </div>
+            <div class="kpi-card">
+                <h3>High-Risk Exposure</h3>
+                <h2 class="danger">14.2%</h2>
+                <p>Of Total Borrowers</p>
+            </div>
+            <div class="kpi-card">
+                <h3>Inquiry Risk Multiplier</h3>
+                <h2 class="warning">2.4x</h2>
+                <p>For 3+ Inquiries (6M)</p>
+            </div>
+            <div class="kpi-card">
+                <h3>Reporting Prep Time</h3>
+                <h2 class="success">&lt; 20 Mins</h2>
+                <p>Reduced from 3 Hours</p>
+            </div>
+        </section>
+
+        <section class="charts-grid">
+            <div class="chart-container">
+                <h3>Borrower Risk Stratification</h3>
+                <canvas id="riskTierChart"></canvas>
+            </div>
+            <div class="chart-container">
+                <h3>Default Rate by Recent Inquiries (6 Months)</h3>
+                <canvas id="inquiryDefaultChart"></canvas>
+            </div>
+        </section>
+        
+        <section class="insights-panel">
+            <h3>Key Analytical Insights & Underwriting Actions</h3>
+            <ul>
+                <li><strong>Cohort Discovery:</strong> Accounts with 3+ credit inquiries within the last 6 months demonstrated a 2.4x higher default rate compared to the baseline portfolio.</li>
+                <li><strong>Scorecard Implementation:</strong> Deployed a weighted scoring model using DTI, credit utilisation, and employment tenure to classify applicants into Low, Medium, and High-risk tiers.</li>
+                <li><strong>Operational Efficiency:</strong> Automated exception-flagging and data validation pipelines via VBA, shrinking the monthly risk reporting cycle from 3 hours to under 20 minutes.</li>
+            </ul>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
