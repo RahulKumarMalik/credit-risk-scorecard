@@ -3,7 +3,7 @@
 ## 📌 Project Overview
 This project simulates a real-world credit appraisal workflow. It involves the analysis of a 50,000-record loan portfolio to identify key default drivers, build a weighted credit scorecard, and automate risk reporting. 
 
-**🔴 [View the Live Interactive Dashboard Here](https://rahulkumarmalik.github.io/credit-risk-dashboard/)** *(Note: Update this link once your GitHub Pages is live!)*
+**🔴 [View the Live Interactive Dashboard Here](https://rahulkumarmalik.github.io/credit-risk-scorecard/)**
 
 ## 🛠️ Tools & Technologies Used
 * **Advanced Excel:** Nested IF logic, SUMPRODUCT scoring, Power Query, Pivot-based MIS, VBA Macros.
